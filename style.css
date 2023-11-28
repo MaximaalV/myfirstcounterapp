@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(img/station.svg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: brightness(20%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    background-color: #FFFF;
+    border-radius: 8px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.649);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.693);
+}
+   
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+   
+.circle {
+    padding: 0 4px;
+}
+   
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+   
+.red {
+    background-color: #ff605c;
+}
+   
+.yellow {
+    background-color: #ffbd44;
+}
+   
+.green {
+    background-color: #00ca4e;
+}
+   
+
+.app {
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app .title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#increment-btn {
+    background: darkred;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px rgb(178, 0, 0);
+}
+
+#save-btn {
+    background: darkgreen;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px rgb(0, 144, 0);
+}
+
+#reset-btn {
+    background: rgb(215, 128, 21);
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px rgb(255, 153, 28);
+}
+
+@media only screen and (max-width: 1000px) {
+    /* Styles for screens with a maximum width of 600px (typical mobile devices) */
+    .card {
+        width: 80%; /* Adjust the width for smaller screens */
+    }
+
+    h2 {
+        font-size: 30px; /* Adjust the font size for smaller screens */
+    }
+
+    #increment-btn,
+    #save-btn,
+    #reset-btn {
+        width: 100%; /* Make the buttons full-width for smaller screens */
+    }
+}
